@@ -12,7 +12,9 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.client.renderer.entity.RenderSnowball;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class McThrowable {
@@ -29,5 +31,10 @@ public class McThrowable {
 		GameRegistry.registerItem(thrownup, "itemThrownUp");
 		EntityRegistry.registerModEntity(EntityThrownUp.class, "entityThrownUp", 1, this, 250, 5, true);
 		RenderingRegistry.registerEntityRenderingHandler(EntityThrownUp.class, new RenderSnowball(thrownup));
+
+		GameRegistry.addShapelessRecipe(new ItemStack(thrownup,4),
+				new ItemStack (Items.ender_pearl),
+				new ItemStack (Items.slime_ball)
+		 );
 	}
 }
