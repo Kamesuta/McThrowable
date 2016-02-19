@@ -32,8 +32,13 @@ public class McThrowable {
 		EntityRegistry.registerModEntity(EntityThrownUp.class, "entityThrownUp", 1, this, 250, 5, true);
 		RenderingRegistry.registerEntityRenderingHandler(EntityThrownUp.class, new RenderSnowball(thrownup));
 
-		GameRegistry.addShapelessRecipe(new ItemStack(thrownup,4),
+		GameRegistry.addShapelessRecipe(new ItemStack(thrownup),
 				new ItemStack (Items.ender_pearl),
+				new ItemStack (Items.slime_ball)
+		 );
+
+		GameRegistry.addShapelessRecipe(new ItemStack(thrownup,2),
+				new ItemStack (Items.ender_eye),
 				new ItemStack (Items.slime_ball)
 		 );
 	}
