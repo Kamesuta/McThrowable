@@ -18,8 +18,8 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.0"
-group= "com.kamesuta.mc.throwable" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Throwable"
+group= "com.bebehp.mc.kagen" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "Kagen Server's Mod"
 
 minecraft {
     version = "1.7.10-10.13.4.1492-1.7.10"

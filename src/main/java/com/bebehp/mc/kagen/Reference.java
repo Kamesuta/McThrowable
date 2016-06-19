@@ -1,11 +1,11 @@
-package com.kamesuta.mc.throwable;
+package com.bebehp.mc.kagen;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Reference {
-	public static final String MODID = "throwable";
-	public static final String NAME = "Throwable";
+	public static final String MODID = "kagen";
+	public static final String NAME = "Kagen";
 	public static final String VERSION = "${version}";
 	public static final String FORGE = "${forgeversion}";
 	public static final String MINECRAFT = "${mcversion}";
